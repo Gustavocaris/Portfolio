@@ -34,7 +34,7 @@ body {
     padding: 15px 30px;
     position: fixed;
 
-    background: black;
+    background: transparent;
 
     z-index: 2;
 }
