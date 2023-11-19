@@ -18,6 +18,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 10px;
+    background: var(--color-black);
 }
 
 body {
@@ -162,7 +163,7 @@ body {
 }
 .stacks-content {
         display: flex;
-        /*align-items: center;*/
+        align-items: initial;
         justify-content: center;
 
         flex-direction: column;
@@ -200,7 +201,7 @@ body {
 */
 
 .stacks ul li img {
-    width: 30px;
+    width: 35px;
     height: auto;   
 
     transition: transform .4s ease;
@@ -208,7 +209,7 @@ body {
 }
 
 .stacks ul li div img:hover{
-    transform:scale(1.2);
+    transform:scale(1.5);
     cursor:pointer;
 }
 .stacks ul li div:hover::after {
@@ -220,7 +221,7 @@ body {
     width: 20px;
     height: 20px;
 
-    color: greenyellow;
+    color: gold;
 }
 
 .person-background {
@@ -358,7 +359,7 @@ body {
 }
 
 .selection-subtitle h2 p:nth-child(2) span {
-    padding: 3px 5px;
+    padding: 4px 5px;
     border-radius: 4px;
 
     color:var(--color-black);
@@ -732,7 +733,7 @@ body {
     }
 
     100% {
-        width: 100%;
+        width: 0%;
         left: 100%;
     }
 }
