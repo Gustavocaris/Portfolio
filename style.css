@@ -113,8 +113,10 @@ body {
     position: relative;
     width: fit-content;
     
-    font-size: 4.5rem; 
-    line-height: 6rem;
+    /*font-size: 4.5rem; */
+    /*line-height: 6rem;*/
+    font-size: calc(2vw + 1.5rem);
+    line-height: calc(3vw + 1.8rem);
 
     animation: written_text .5s ease forwards;
     
@@ -160,14 +162,17 @@ body {
 }
 .person-name {
     margin-top: 11rem;
+    padding: 0px 20px;
 }
 .stacks-content {
         display: flex;
         align-items: initial;
         justify-content: center;
 
+        margin-top: 5rem 0rem 2rem; 
         flex-direction: column;
-        margin-top: 6rem;   
+         
+        padding: 0px 20px; 
 }
 
 .stacks-content h3 {
@@ -179,6 +184,7 @@ body {
 .stacks {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     flex-direction: row;
 }
@@ -201,7 +207,8 @@ body {
 */
 
 .stacks ul li img {
-    width: 35px;
+    /*width: 35px;*/
+    width: calc(3.5vw + 0.5rem);
     height: auto;   
 
     transition: transform .4s ease;
@@ -215,14 +222,51 @@ body {
 .stacks ul li div:hover::after {
     content: attr(data);
     position: absolute;
-    top: 50px;
-    left: 10px;
+    /*top: 50px;*/
+    /*left: 10px;*/
+    top: calc(5vw + 1rem);
+    left: calc(1vw + 0.5rem);
 
     width: 20px;
     height: 20px;
 
     color: gold;
 }
+
+/* SM  - RESPONSIVIDADDE*/
+@media (max-width: 376px) {
+    .person-name {
+        padding: 0px 10px;
+    }
+    
+    .stacks-content {
+        padding: 0px 10px;
+    }
+
+    .stacks-content h3 {
+        margin-left: 10px;
+    }
+
+    .stacks {
+        margin-top: 10px;
+    }
+
+    .stacks ul li {
+        margin-top: 0px;
+    }
+
+    .stacks ul li img {
+        width: calc(3.5vw + .5rem);
+    }
+}
+
+/* SM -> MD - RESPONSIVIDADDE*/
+@media (min-width: 377px) and (max-width: 768px) {
+    .stacks ul li img {
+        width: calc(3.2vw + .5rem);
+    }
+}
+
 
 .person-background {
     height: 100vh;
