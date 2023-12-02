@@ -454,8 +454,8 @@ body {
 }
 
 .links a img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     
     margin: calc(0.8vw + 0.8rem);
     filter: brightness(.9);
@@ -927,7 +927,7 @@ body {
 
     width: 100%;
 
-    margin: 3vw 0vw 5vw;
+    /*margin: 3vw 0vw 5vw;*/
 
     background: black;
 
