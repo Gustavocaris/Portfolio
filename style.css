@@ -61,26 +61,24 @@ body {
     width: 100%;
 }
 
-.navbar ul {
+.navbar-links {
     list-style: none;
 
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.navbar ul li {
+.navbar-links li {
     list-style: none;
 }
 
-.navbar ul li a {
+.navbar-links li a {
     text-decoration: none;
     color: var(--color-white);
 
     font-size: 1.4rem;
     font-weight: 700;
 }
-
-
 
 
 #person{
@@ -581,7 +579,7 @@ body {
 
 /* INICIOOO DO PROJECTS*/
 #projects {
-    height: 100vh;
+    height: auto;
     width: 100%;
     background: black;
 
@@ -592,7 +590,7 @@ body {
 }
 
 .projects-title h2 {
-    margin: 3rem;
+    margin-top: 60px;
     padding: 1rem;
 
     font-size: 3rem;
@@ -623,7 +621,7 @@ body {
 }
 
 .swiper {
-    height: 100%;
+    height: 500px;
     width: 100%;
     max-width: 1020px;
     
@@ -635,6 +633,7 @@ body {
     height: 500px;
     
     margin-top: 2rem;
+    padding: 0px 20px;
 
 
 }
@@ -763,14 +762,73 @@ body {
     opacity: .7;
 }
 
+@media (max-width: 375px) {
+    .swiper-slide span {
+        font-size: 1.5rem;
+    }
+
+    .swiper-slide p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .swiper {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 700px) {
+    .swiper {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 1840px) {
+    .projects-title h2 {
+        font-size: calc(1.4vw + 1.8rem);
+    }
+
+    .swiper {
+        max-width: calc(30vw + 15rem + 30%);
+        height: calc(19vw + 22.5rem);
+    }
+
+    .image-project {
+        max-width: calc(10vw + 11rem);
+        max-height: calc(10vw + 10rem);
+    }
+
+    .card-project span {
+        font-size: calc(1vw + .25rem);
+        margin: 0.5vw auto 0.5vw;
+    }
+
+    .card-project p {
+        font-size: calc(.7vw + .2rem);
+    }
+
+    .cta-project {
+        width: auto;
+    }
+
+    .cta-project a {
+        padding: 1rem 2rem;
+        font-size: 0.8vw;
+        margin-right: 1vw;
+    }
+}
+
+
 /* FIM DO PROJECTS*/
 
-#contacts{
+#contacts {
     display: flex;
     flex-direction: column;
 
-    height: 40vh;
     width: 100%;
+
+    margin: 3vw 0vw 5vw;
 
     background: black;
 
@@ -841,6 +899,33 @@ body {
 }
 
 
+@media (min-width:1840px) {
+    .contact-icon-content h2 {
+        font-size: calc(1.4vw + 1.8rem);
+    }
+
+    .contact-icon {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .contact-icon i {
+        font-size: 1vw;
+    }
+
+    .contact-info span {
+        font-size: 1.1vw;
+    }
+
+    .contact-info p {
+        font-size: .7vw;
+    }
+
+    .contact-info a {
+        font-size: .7vw;
+    }
+}
+
 #footer {
     height: 15vh;
     width: 100%;
@@ -862,6 +947,19 @@ body {
     flex-direction: column;
     color: white;
 }
+
+@media (min-width: 1840px) {
+    .container-footer h2 {
+        font-size: calc(1vw + .2rem);
+    }
+
+    .container-footer h3 {
+        font-size: .8vw;
+    }
+}
+
+
+
 
 @keyframes written_text {
     100% {
