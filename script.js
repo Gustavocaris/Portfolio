@@ -1,8 +1,9 @@
-
-
+const menuhamburguer = document.querySelector('.menu-hamburguer');
+const nav = document.querySelector('.navbar');
+const links = document.querySelectorAll('.navbar-links li a');
 
 let swiper = createSwiper (".mySwiper", ".swiper-pagination",".swiper-button-next",".swiper-button-prev")
-
+let header = document.getElementById('header')
 
 function createSwiper (container, pagination, nextButton, prevButton){
   return new Swiper(container, {
@@ -20,10 +21,6 @@ function createSwiper (container, pagination, nextButton, prevButton){
 }
 
 
-
-
-let header = document.getElementById('header')
-
 function handlewidth() {
   let getwidth = window.innerWidth || document.documentElement.clientWidth;
   let slideshow = 3;
@@ -38,6 +35,17 @@ function handlewidth() {
 
   return slideshow
 }
+
+menuhamburguer.addEventListener('click', () =>{
+  nav.classList.toggle('active');
+});
+
+links.forEach(item => {
+  item.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  })
+})
+
 
 
 window.addEventListener('resize', () => {
