@@ -407,9 +407,11 @@ body {
     position: relative;
     flex-direction: column;
 
-    background-image: url(./img/img1.jpg);
+    background-image: url(./img/notebookfundo2.jpg);
     background-size: cover;
     background-position: top center;
+    filter: brightness(100%);
+
 }
 
 .person-background::after{
@@ -447,8 +449,8 @@ body {
 
 .wrapper-profile-photo img {
     max-width: 320px;
-    border: 8px solid var(--color-black);
-    width: 30%;
+    border: 8px solid ivory;
+    width: 50%;
     /*height: 150px;*/
     border-radius: 25px;
 }
